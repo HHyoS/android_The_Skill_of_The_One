@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문제의 과목을 선택 혹은 새로 만드세요."
+            android:textSize="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="과목 선택"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp">
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="과목"
+        android:layout_margin="0dp"
+        android:textSize="15dp"
+        android:padding="0dp" />
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+            </Spinner>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="과목 추가"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/addfield"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="새로만들 과목"/>
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가"/>
+    </LinearLayout>
+
+
+<TextView
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="저장할 문제명을 입력하세요"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/QnameInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="문제명 입력"/>
+        <Button
+            android:id="@+id/nameSave"
+            android:text="이름확정!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/field"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:hint="과목명"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="과목명"
+            android:gravity="center"
+            android:textSize="19dp"/>
+    <Button
+        android:id="@+id/savebutton"
+        android:text="저장하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

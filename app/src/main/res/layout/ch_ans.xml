@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+    <Button
+        android:id="@+id/saveBt"
+        android:layout_gravity="right"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="저장"/>
+    <EditText
+        android:layout_gravity="left"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionET"
+        android:hint="문제를 입력하세요."
+        android:inputType="text"/>
+
+    <FrameLayout
+        android:layout_width="500dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/write"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/choiBt"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:text="이미지 고르기"/>
+        <Button
+            android:id="@+id/writeBt"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:text="직접 작성하기"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="1번"/>
+        <EditText
+            android:id="@+id/answ1"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="2번"/>
+        <EditText
+            android:id="@+id/answ2"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="3번"/>
+        <EditText
+            android:id="@+id/answ3"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="4번"/>
+        <EditText
+            android:id="@+id/answ4"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="5번"/>
+        <EditText
+            android:id="@+id/answ5"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="679dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:padding="0dp"
+            android:text="답 : "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:hint="번호"
+            android:inputType="numberSigned"
+            android:padding="0dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="번"
+            android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>
